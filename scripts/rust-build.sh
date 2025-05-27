@@ -18,3 +18,6 @@ wasm-pack build --target web --out-dir "$CML_BUILD_DIR/web"
 # wasm-pack build --target web --out-dir "$UPLC_BUILD_DIR/workers"
 # wasm-pack build --target nodejs --out-dir "$UPLC_BUILD_DIR/nodejs"
 # wasm-pack build --target browser --out-dir "$UPLC_BUILD_DIR/browser"
+
+# Clean up
+find "$WORKING_DIR/src" -type f -name '.gitignore' -exec rm -f {} +
