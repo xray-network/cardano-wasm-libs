@@ -1,0 +1,49 @@
+{
+  "name": "cardano-wasm-libs",
+  "version": "1.0.0",
+  "author": "XRAY/Network <hello@xray.app>",
+  "description": "A set of rust libraries that are compiled into WASM for further use in Cardano infrastructure",
+  "license": "MIT",
+  "homepage": "https://cardano-web3-js.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xray-network/cardano-was-libs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xray-network/cardano-web3-js/issues"
+  },
+  "keywords": [
+    "Cardano",
+    "JavaScript",
+    "API"
+  ],
+  "files": [
+    "src"
+  ],
+  "type": "module",
+  "main": "./src/nodejs.js",
+  "types": "./src/nodejs.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "browser": "./src/browser.js",
+        "web": "./src/web.js",
+        "node": "./src/nodejs.js",
+        "default": "./src/nodejs.js"
+      }
+    },
+    "./web": "./src/web.js",
+    "./browser": "./src/browser.js",
+    "./nodejs":  "./src/nodejs.js"
+  },
+  "scripts": {
+    "rust-build": "./scripts/rust-build.sh",
+    "rust-update": "./scripts/rust-update.sh",
+    "format": "prettier --write \"**/*.{js,ts,mts,cts,json}\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
