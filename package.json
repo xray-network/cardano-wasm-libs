@@ -37,8 +37,11 @@
     "./nodejs":  "./src/nodejs.js"
   },
   "scripts": {
-    "rust-build": "./scripts/rust-build.sh",
-    "rust-update": "./scripts/rust-update.sh",
+    "cml-build": "./scripts/cml-build.sh",
+    "cml-update": "./scripts/cml-update.sh",
+    "msl-build": "./scripts/msl-build.sh",
+    "msl-update": "./scripts/msl-update.sh",
+    "uplc-build": "./scripts/uplc-build.sh",
     "format": "prettier --write \"**/*.{js,ts,mts,cts,json}\""
   },
   "devDependencies": {

@@ -1,3 +1,6 @@
 [submodule "rust/cardano-multiplatform-lib"]
 	path = rust/cardano-multiplatform-lib
 	url = https://github.com/dcSpark/cardano-multiplatform-lib.git
+[submodule "rust/message-signing-lib"]
+	path = rust/message-signing-lib
+	url = https://github.com/Emurgo/message-signing.git
