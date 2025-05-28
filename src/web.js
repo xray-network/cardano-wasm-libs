@@ -7,3 +7,8 @@ import * as MSL from "./libs/message-signing-lib/web/cardano_message_signing"
 import MSLWasm from "./libs/message-signing-lib/web/cardano_message_signing_bg.wasm"
 MSL.initSync(MSLWasm)
 export * as MSL from "./libs/message-signing-lib/web/cardano_message_signing"
+
+export * as UPLC from "./libs/untyped-plutus-core/web/uplc_wasm"
+import UPLCWasm from "./libs/untyped-plutus-core/web/uplc_wasm_bg.wasm"
+UPLC.initSync(UPLCWasm)
+export * as UPLC from "./libs/untyped-plutus-core/nodejs/uplc_wasm"
