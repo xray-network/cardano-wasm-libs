@@ -10,7 +10,14 @@ A set of rust libraries that are compiled into WASM for further use in Cardano i
 * [Message Signing Lib](https://github.com/Emurgo/message-signing) (by Emurgo)
 * [Untyped Plutus Core Lib](https://github.com/xray-network/cardano-wasm-libs/tree/main/rust/untyped-plutus-core) (by XRAY/Network)
 
-# Usage
+# Installation & Usage
+
+Installation
+```bash
+yarn add cardano-wasm-libs
+```
+
+Usage
 ```ts
 import { CML, MSL, UPLC } from "cardano-wasm-libs/nodejs" // nodejs
 import { CML, MSL, UPLC } from "cardano-wasm-libs/browser" // browser
