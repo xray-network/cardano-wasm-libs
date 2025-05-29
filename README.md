@@ -4,11 +4,18 @@
   
 # Cardano WASM Libs
 
-A set of rust libraries that are compiled into WASM for further use in Cardano infrastructure. Used as wasm-pack export to various targets (nodejs, browser, web). Made for [CardanoWeb3js](https://github.com/xray-network/cardano-web3-js).
+A set of rust libraries that are compiled into WASM for further use in Cardano infrastructure. Used as wasm-pack export to various targets (nodejs, browser, web+serverless). Made for [CardanoWeb3js](https://github.com/xray-network/cardano-web3-js).
 
 * [Cardano Multiplatform Lib](https://github.com/dcSpark/cardano-multiplatform-lib) (by dcSpark)
 * [Message Signing Lib](https://github.com/Emurgo/message-signing) (by Emurgo)
 * [Untyped Plutus Core Lib](https://github.com/xray-network/cardano-wasm-libs/tree/main/rust/untyped-plutus-core) (by XRAY/Network)
+
+# Usage
+```ts
+import { CML, MSL, UPLC } from "cardano-wasm-libs/nodejs" // nodejs
+import { CML, MSL, UPLC } from "cardano-wasm-libs/browser" // browser
+import { CML, MSL, UPLC } from "cardano-wasm-libs/web" // browser, serverless environments (Cloudflare Workers, etc)
+```
 
 # Build & Submodules Update
 
