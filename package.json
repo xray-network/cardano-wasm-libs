@@ -1,6 +1,6 @@
 {
   "name": "cardano-wasm-libs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "XRAY/Network <hello@xray.app>",
   "description": "A set of rust libraries that are compiled into WASM for further use in Cardano infrastructure",
   "license": "MIT",
